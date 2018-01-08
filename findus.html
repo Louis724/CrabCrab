@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hello Worlds</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Niconne' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel='stylesheet' type='text/css' href='style.css'/>
+  <script src="script.js"></script>
+
+</head>
+<div class="col-sm-1"></div>
+<div class="col-sm-10">
+<body id="myPage" class="bg-2" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- Navbar -->
+<nav class="navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">                       
+      </button>
+      <img class="navbar-brand logo col-sm-3" src="C:\Users\Louis\Desktop\Hello\Picture\Capture.png">
+      <p class="narbar-on col-sm-9" href="#">WILLIAM'S CRAB</p>
+      <p class="col-sm-3"></p>
+      <p class="navbar-brand col-sm-6">William Catch The Fresh</p>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right ">
+        <li><a href="hello.html">Restaurant</a></li>
+        <li><a href="Freshstart.html">My Story</a></li>
+    
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu center red">
+            <li><a href="dinner.html">Dinner</a></li>
+            <li><a href="freshcatch.html">Fresh Catch</a></li>
+            <li><a href="beverages.html">Beverages</a></li>
+            <li><a href="dessert.html">Dessert</a></li>
+            <li><a href="alacarte.html">Ala Carte Lunch</a></li>
+            <li><a href="setlunch.html">Set Lunch</a></li>
+            <li><a href="premiumpackages.html">Premium Packages</a></li>
+          </ul>
+        </li>
+
+        <li><a href="offer.html">News & Offer</a></li>
+        <li><a href="findus.html">Find Us</a></li>
+        <li><a href="reservation.html">Table Booking Online</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div id="eleventy" class="container-fluid bg-4 text-center">
+<div class="text-center col-sm-12 margin">
+  <p class="title">&nbsp;&nbsp;FIND US&nbsp;&nbsp;</p>
+</div>
+
+<img src="C:\Users\Louis\Desktop\Hello\Picture\Capture12.png" class="blackborder" width="814px" height="244px" alt="Main">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1 class="orange left margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Location</h1>
+<div id="googleMap" style="height:265px;width:555px;left:206px;"></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<img src="C:\Users\Louis\Desktop\Hello\Picture\Capture11.png" class="blackborder slideanim" width="898px" height="625px" alt="Main">
+</div>
+<div class="margin-set"></div>
+
+<!-- Footer -->
+<footer class="container-fluid left bg-1">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-5">
+  <p>© 2015 - 2017 William's Crab Restaurant. </p> 
+  </div>
+  <div class="col-sm-5 logoonly right">
+  <p><img src="C:\Users\Louis\Desktop\Hello\Picture\fb.png" onclick="parent.open('https://www.facebook.com/williamcrab')">
+  <img src="C:\Users\Louis\Desktop\Hello\Picture\tw.png" onclick="parent.open('https://twitter.com/WilliamsCrab')">
+  <img src="C:\Users\Louis\Desktop\Hello\Picture\g+.png" onclick="parent.open('https://plus.google.com/111790315157652988653?hl=en')">
+  <img src="C:\Users\Louis\Desktop\Hello\Picture\ins.png" onclick="parent.open('https://www.instagram.com/williamscrab/')"></p>
+  </div>
+  <div class="col-sm-1"></div>
+</footer>
+  </body>
+  </html>
+
+  <script>function myMap() {
+  var myCenter = new google.maps.LatLng(3.037561,101.709247);
+  var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4abCWOBFPVdHfoLWMFQv0si1RvfvJ7tI&callback=myMap"></script>
